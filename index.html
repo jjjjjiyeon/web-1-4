@@ -1,0 +1,228 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>기본페이지</title>
+    <style type="text/css">
+        /* 1. 폰트 선언 */
+        @font-face {
+            font-family: 'Sweet';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+            font-weight: 400;
+            font-display: swap;}
+        @font-face {
+            font-family: 'RomanticGumi';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/GumiRomanceTTF.woff2') format('woff2');
+            font-weight: normal;
+            font-display: swap;}
+        @font-face {
+            font-family: 'KkuBulLim';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/BMkkubulimTTF-Regular.woff2') format('woff2');
+            font-weight: normal;
+            font-display: swap;}
+        @font-face {
+            font-family: 'NostalgicMongtori';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-1@1.0/Griun_Mongtori-Rg.woff2') format('woff2');
+            font-weight: normal;
+            font-display: swap;}
+        @font-face {
+            font-family: 'SchoolSafetyPoster';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2511-1@1.0/HakgyoansimPosterB.woff2') format('woff2');
+            font-weight: normal;
+            font-display: swap;}
+
+
+        body, h1, h2, h3, h4, p, ol, ul, li {
+            margin: 0;
+            padding: 0; }
+
+        body, p {
+            font-family: 'Sweet', sans-serif;
+            line-height: 1.8; 
+            word-break: keep-all;}
+
+        h1, h3 {
+            font-family: 'SchoolSafetyPoster', sans-serif;
+            line-height: 1.4;
+            word-break: keep-all;}
+
+        h2, h4 {
+            font-family: 'NostalgicMongtori', sans-serif;
+            line-height: 1.4;
+            word-break: keep-all;}
+
+        .redpoint { color: red; font-weight: bold; }
+        .blackpoint { color: black; font-weight: bold; font-family: 'KkuBulLim'; font-size: 30px; }
+        .brownpoint { color: brown; }
+        .endpoint { color: red; font-weight: bold; font-family: 'KkuBulLim'; font-size: 70px; }
+        .pontwhite { color: white; }
+        .left { text-align: left; padding-right: 100px; }
+        .right { text-align: right; padding-left: 100px; }
+
+        section { background: white; width: 100%; }
+        
+        div.contents {
+            width: 800px;
+            margin: 0 auto;
+            padding: 50px;
+            text-align: center;}
+
+        div.bg-spacing {
+            width: 800px;
+            margin: auto;
+            padding-top: 300px;
+            padding-bottom: 30px;
+            padding-left: 50px;}
+
+        h1 { font-size: 70px; padding-top: 20px; color: white; }
+        h2 { font-size: 40px; padding-top: 20px; }
+        h3 { font-size: 60px; padding-top: 20px; color: white; }
+        h4 { font-size: 200px; text-align: center; padding: 300px; color: red; }
+        p { font-size: 21px; padding-top: 20px; padding-bottom: 100px;}
+        img {
+            display: block;
+            margin: 40px auto;
+            width: 80%;
+            max-width: 100%;}
+
+
+        section.black { background: black; color: white; }
+        section.mein { background: darkgreen; color: white; }
+        .gradient { background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(255, 255, 255, 1) 100%); }
+        .bg-fire { background: url(bgfire.png); background-attachment: fixed; background-size: 50%; }
+        .bg-ceiling { background: url(bgceiling.jpg); background-attachment: fixed; background-size: cover; }
+        .bg-opps { background: url(opps.jpeg); background-attachment: fixed; background-size: cover; }
+
+
+        .flex { display: flex; justify-content: space-between; align-items: center; }
+        ul, li { list-style: none; }
+        ul li a { text-decoration: none; display: block; padding: 8px 12px; color: darkgreen; }
+        ul li a:hover { background: darkgreen; color: brown; transition: all 1s; }
+
+        nav .contents {
+            width: 800px;
+            margin: auto;
+            padding: 10px 50px;}
+        nav h1 { font-size: 20px; padding-top: 0; color: darkgreen; }
+        
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="contents flex">
+            <div class="logo">
+                <h1>두바이쪼온득쿠키</h1>
+            </div>
+            <ul class="flex">
+                <li><a href="#one">발단..</a></li>
+                <li><a href="#two">전개..</a></li>
+                <li><a href="#three">위기..</a></li>
+                <li><a href="#four">결말..</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <section class="mein">
+            <div class="contents">
+                <h1>두쫀쿠 이야기</h1>
+                <p>두쫀쿠를 향한 그녀의 여정... 지금부터 시작합니다</p>
+            </div>
+        </section>
+    </header>
+
+    <section id="one" class="brown">
+        <div class="contents">
+            <h2>때는 두쫀쿠 붐이 일었던 2025년 12월.</h2>
+            <img src="7.jpg">
+            <p>인터넷을 켜도, 인스타를 넘겨도, 심지어 꿈속에서도 그 쫀득하고 두툼한 쿠키의 자태가 나를 괴롭혔다. 유행하는 건 꼭 내 눈으로 확인해야 직성이 풀리는 나였기에, 내 목표는 단 하나였다. '두쫀쿠 영접'.</p>
+            <p>하지만 그 길은 멀고도 험난했다. 오전 10시에 문을 여는 카페의 쿠키가 10시 반이면 흔적도 없이 사라진다는 소식은 나에게 사형 선고나 다름없었다. 방학을 맞이한 대학생에게 '오전 9시 기상'이란, 불가능에 가까운 미션이었기 때문이다. 평소의 나는 겨울잠에 든 곰처럼 한 번 잠들면 침대와 물아일체가 되곤 했다.</p>
+            <img src="1.gif">
+            <p class="left">그럼에도 나는 포기할 수 없었다. <br>어느 날 밤,<br> SNS에서 '자기 전 베개를 세 번 치며 기상 시간을 외치면 뇌가 반응한다'는 신비로운 릴스를 발견했다.</p>
+            <p class="right">나는 그날부터 매일 밤 경건한 마음으로 침대 앞에 무릎을 꿇었다. <br>"9시, 9시, 9시!" 손바닥이 얼얼해질 정도로 베개를 내리치며 간절히 기도했다. <br>이것은 기상을 위한 노력을 넘어, 두쫀쿠라는 성배를 얻기 위한 일종의 성스러운 의식이었다.</p>
+            <img src="2.jpg">
+            <p>하지만 현실은 잔혹한 법. <br>알람은 매일 아침 나를 열심히 깨워댔지만, 내 뇌는 그 소리를 자장가 삼아 더 깊은 잠에 빠졌다. 간신히 눈을 뜨면 언제나 창밖은 이미 해가 중천을 넘어 내리쬐고 있었다.</p>
+            <p>10시 31분, <br>인스타 스토리에 올라오는 'Today Sold Out' 공지를 확인할 때마다 가슴이 찢어지는 것 같았다.</p>
+            <img src="3.jpg">
+            <p>이것은 단순한 게으름의 문제가 아니었다. <br>세상이 나를 거부하고, 운명이 나를 시험하며, 우주의 기운이 나의 두쫀쿠 득템을 방해하는 것만 같았다.<br> '나는 평생 저 전설의 맛을 보지 못한 채 늙어 죽을 것인가?' 하는 공포마저 밀려왔다. 친구들이 올리는 인증샷을 보며 나는 편의점의 퍽퍽한 양산형 쿠키로 연명해야만 했다.</p>
+        </div>
+    </section>
+
+    <section id="two" class="bg-opps">
+        <div class="contents">
+            <h4>그때!</h4>
+        </div>
+    </section>
+
+    <section>
+        <div class="contents">
+            <p>나에게 그토록 바라던 일이 일어났다</p>
+            <p>바로바로 <span class="redpoint">“두 쫀 쿠 득 템”</span></p>
+            <p>친구가 오픈런한 두쫀쿠를 나에게 하나 하사한것이다!!!</p>
+            <img src="6.png">
+            <p>학수고대 끝에 마주하게 된 그 두쫀쿠는 보기에도 말랑하고… 피도 얇고… 속이 꽉 차 있는 것처럼 보였다…</p>
+            <p>릴스와 숏츠로 먹방만을 바라본지 어연 2주… 내 눈 앞에 있는 두쫀쿠가 날 보고 웃고 있는 것 같았다…</p>
+            <img src="8.jpg">
+            <p>나는 두쫀쿠를 성급히 전자레인지에 넣었다. 전자레인지에 돌려야 가장 맛있고 쫀득하다는 것을 봤기 때문이었다.</p>
+            <p>문제는 이렇게 발생했다. 돌려 먹어야 맛있다는 것만 알고 <span class="redpoint">‘몇초’</span> 돌려야하는지는 알지 못했다.</p>
+            <img src="2.gif">
+            <p>빨리 먹고싶었던 나는 <시작/30초> 버튼을 눌러버렸고…</p>
+        </div>
+    </section>
+
+    <section id="three" class="bg-fire">
+        <div class="bg-spacing">
+            <h2><span class="pontwhite">“두쫀쿠는</span> <span class="redpoint">타버렸다</span>”</h2>
+        </div>
+    </section>
+
+    <section class="black">
+        <div class="contents">
+            <p>마치 쓰다듬어주고싶은 두쫀쿠의 동그란 머리는 어디가고 마시멜로우피가 녹아내리다못해 까맣게 탄 부분마저 있었다. <span class="redpoint">안돼애애애앸!!!!!!!</span> 이라고 속으로 외쳤지만 나는 나의 두쫀쿠가 보는 앞에서 당황한 기색을 보이고싶지않았다.</p>
+            <img src="9.jpg">
+            <p>‘음음^^ 생각한 비주얼이 아니지만 괜찮겠지…?그래야만 해...’ 라고 침착한 척 안탄 절반을 입에 넣었다.</p>
+        </div>
+    </section>
+
+    <section class="gradient">
+        <div class="contents">
+            <p><span class="pontwhite">잘근 잘근…잘근 잘근… 잘근...잘근...</span></p>
+            <p>잘근...</p>
+            <p><span class="redpoint">잘근........</span></p>
+        </div>
+    </section>
+
+    <section id="four" class="red">
+        <div class="contents">
+            <h2>씹으면 씹을수록 느껴지는것은… </h2>
+            <p><span class="redpoint">고통</span>이었다… 아아...</p>
+            <p>쫀득함은 온데간데없고, 타버린 설탕의 쓴맛과 딱딱하게 굳어버린 반죽의 저항감이 잇몸을 파고들었다. 아아, 나의 욕심이 신의 선물을 재앙으로 바꾸었구나. 나는 밀려오는 자책감에 조용히 눈을 감고 이 비극을 음미했다.</p>
+            <p>...그리고 천천히 다시 눈을 떴을 때,</p>
+        </div>
+    </section>
+
+    <section class="bg-ceiling">
+        <div class="contents">
+            <p>보이는 것은 오직 밋밋하고 하얀 천장뿐이었다. <br>코끝을 찌르던 탄내도, 입안을 맴돌던 쓴맛도 없었다. 시계는 이미 11시를 가리키고 있었고, <br>내 입엔 고통조차 남아있지 않았다.</p>
+            <p><span class="redpoint">그 모든 것은 꿈이었다.</span></p>
+        </div>
+    </section>
+
+    <section class="red">
+        <div class="contents">
+            <p>나는 여전히 유행에 도태된,<br> 두쫀쿠를 먹어보지 못한,<br> 오픈런을 실패한,<br> 오늘도 늦잠자다가 눈 뜬 대학생이었다.</p>
+            <p><span class="blackpoint">타버린 두쫀쿠조차도 가져보지 못한...</span></p>
+            <img src="1.jpg">
+        </div>
+    </section>
+</body>
+
+<footer>
+    <section class="mein">
+        <div class="contents">
+            <h3>두쫀쿠 <span class="endpoint">(먹는 꿈)</span> 이야기</h3>
+            <h3>-The End-</h3>
+        </div>
+    </section>
+</footer>
+</html>
